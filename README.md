@@ -50,7 +50,7 @@ https://drive.google.com/drive/folders/1-mhUBnkBCqsu2Z9Z0GP2lMA0ZpR5DvkA?usp=dri
 # 3. 克隆项目
 
 ```bash
-git clone <your_repo_url>
+git clone https://github.com/groolegend/hw2_task1.git
 cd   hw2_task1/flower_classification
 ```
 

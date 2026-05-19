@@ -51,7 +51,7 @@ https://drive.google.com/drive/folders/1-mhUBnkBCqsu2Z9Z0GP2lMA0ZpR5DvkA?usp=dri
 
 ```bash
 git clone <your_repo_url>
-cd flower_classification
+cd   hw2_task1/flower_classification
 ```
 
 ---

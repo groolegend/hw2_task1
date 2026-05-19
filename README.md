@@ -104,31 +104,18 @@ train_resnet.yml
 ## 参数说明
 
 | 参数 | 作用 |
-
 |---|---|
-
 | `pretrained` | 是否使用 ImageNet 预训练权重 |
-
 | `optimizer` | 优化器类型，支持 `adamw` / `sgd` |
-
 | `epochs` | 训练轮数 |
-
 | `backbone_lr` | 主干网络学习率 |
-
 | `fc_lr` | 分类头学习率 |
-
 | `weight_decay` | 权重衰减 |
-
-| `label_smoothing` | 标签平滑|
-
+| `label_smoothing` | 标签平滑 |
 | `scheduler` | 调度器，支持 `cosine` / `step` / `none` |
-
 | `momentum` | SGD 动量参数 |
-
 | `eta_min` | Cosine scheduler 最小学习率 |
-
 | `step_size` | StepLR 衰减步长 |
-
 | `gamma` | StepLR 学习率衰减系数 |
 
 ---
@@ -152,29 +139,17 @@ train_transformer.yml
 ## Transformer 参数说明
 
 | 参数 | 作用 |
-
 |---|---|
-
 | `model_name` |支持 `swin_t`|
-
 | `optimizer` | 优化器，支持adamw |
-
 | `epochs` | 训练轮数 |
-
 | `backbone_lr` | Transformer backbone 学习率 |
-
 | `head_lr` | Transformer 分类头学习率 |
-
 | `weight_decay` | 权重衰减 |
-
 | `label_smoothing` | 标签平滑 |
-
 | `scheduler` | 学习率调度器 |
-
 | `eta_min` | Cosine scheduler 最小学习率 |
-
 | `step_size` | StepLR 衰减步长 |
-
 | `gamma` | StepLR 学习率衰减系数 |
 
 ---

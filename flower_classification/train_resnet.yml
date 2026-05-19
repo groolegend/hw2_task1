@@ -1,0 +1,35 @@
+root_save_dir: ./val_search_results
+wandb_project: resnet34-val-search
+
+momentum: 0.9
+eta_min: 0.0
+step_size: 10
+gamma: 0.3
+
+search:
+  pretrained:
+    - true
+    # - false
+
+  optimizer:
+    - adamw
+
+  epochs:
+    - 50
+
+  backbone_lr:
+    - 3.0e-5
+
+  fc_lr:
+    - 1.0e-3
+    - 2.0e-3
+    - 3.0e-3
+
+  weight_decay:
+    - 1.0e-4
+
+  label_smoothing:
+    - 0.0
+
+  scheduler:
+    - cosine

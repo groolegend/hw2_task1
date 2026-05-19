@@ -1,0 +1,36 @@
+root_save_dir: ./transformer_val_search_results
+wandb_project: flower102-transformer-search
+
+eta_min: 0.0
+step_size: 10
+gamma: 0.3
+
+search:
+  model_name:
+    - swin_t
+
+  optimizer:
+    - adamw
+
+  scheduler:
+    - cosine
+    #- step
+  epochs:
+    - 30
+
+  backbone_lr:
+    - 1.0e-5
+    - 3.0e-5
+    - 5.0e-5
+
+  head_lr:
+    - 5.0e-4
+    - 1.0e-3
+    - 2.0e-3
+
+  weight_decay:
+    - 1.0e-4
+    - 5.0e-4
+
+  label_smoothing:
+    - 0.0
